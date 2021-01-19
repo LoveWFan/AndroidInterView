@@ -1,0 +1,12 @@
+DFS(回溯算法)模板代码
+
+res = []
+def back_trace(路径, 选择列表)
+    if 满足结束条件:
+        res.add(路径)
+        return
+    for 选择 in 选择列表:
+        做选择
+        back_trace(路径, 选择列表)
+        撤销选择
+
